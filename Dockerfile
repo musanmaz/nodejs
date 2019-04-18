@@ -5,6 +5,7 @@ ENV NODE_VERSION=8.12.0
 ENV PATH=${PATH}:/opt/nodejs/bin
 
 USER root
+RUN ls -lart
 
 RUN mkdir /opt/nodejs \
 && mkdir /home/jenkins/.node-gyp \
